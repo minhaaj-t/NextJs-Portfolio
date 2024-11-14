@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -59,7 +58,6 @@ const ScrollReveal = ({ children }) => {
 
 export function PortfolioSiteComponent() {
   const [activeTab, setActiveTab] = useState("home");
-  const [selectedProject, setSelectedProject] = useState(null);
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
