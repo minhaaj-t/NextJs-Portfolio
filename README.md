@@ -6,6 +6,9 @@
 
 Welcome to my personal portfolio website! This website is built using **Next.js** and showcases my projects, career, photography, and contact information.
 
+[iPhone-13-PRO-localhost-ecio7nj4r4vlxu.webm](https://github.com/user-attachments/assets/726096fc-c882-4d97-82e3-ed0ea15374cf)
+
+
 ## Table of Contents
 - Introduction
 - Features
