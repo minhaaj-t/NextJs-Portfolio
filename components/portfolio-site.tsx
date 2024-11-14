@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -389,7 +390,7 @@ export function PortfolioSiteComponent() {
             <div className="relative">
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full bg-slate-950 p-1">
-                  <img
+                  <image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/qq.JPG-v2KirEmlsacwk1voYxyjaqu7fRyt7I.jpeg"
                     alt="Profile"
                     className="rounded-full w-full h-full object-cover"
@@ -492,7 +493,7 @@ export function PortfolioSiteComponent() {
           <div className="overflow-hidden bg-slate-800 rounded-lg p-4">
             <div ref={logoSliderRef} className="flex whitespace-nowrap">
               {[...logos, ...logos, ...logos].map((logo, index) => (
-                <img
+                <image
                   key={index}
                   src={logo.url}
                   alt={logo.name}
@@ -614,7 +615,7 @@ export function PortfolioSiteComponent() {
                     key={index}
                     className="flex items-center space-x-2 bg-slate-700 rounded-lg p-2"
                   >
-                    <img
+                    <image
                       src={badge.icon}
                       alt={badge.name}
                       className="w-10 h-10"
@@ -640,7 +641,7 @@ export function PortfolioSiteComponent() {
           <ScrollReveal key={project.id}>
             <Card className="bg-slate-800 border-slate-700 overflow-hidden hover:border-slate-600 transition-colors shadow-lg">
               <CardContent className="p-0">
-                <img
+                <image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-64 object-cover"
@@ -688,7 +689,7 @@ export function PortfolioSiteComponent() {
                             </DialogDescription>
                           </DialogHeader>
                           <div className="space-y-4">
-                            <img
+                            <image
                               src={project.image}
                               alt={project.title}
                               className="w-full h-64 object-cover rounded-lg"
@@ -903,7 +904,7 @@ export function PortfolioSiteComponent() {
                 onClick={() => openImageModal(photo.url)}
               >
                 <CardContent className="p-0">
-                  <img
+                  <image
                     src={photo.url}
                     alt={photo.title}
                     className="w-full h-48 object-cover"
@@ -1162,7 +1163,7 @@ export function PortfolioSiteComponent() {
               className="bg-slate-900 p-2 rounded-lg max-w-4xl max-h-[90vh] overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <image
                 src={selectedImage}
                 alt="Full size image"
                 className="w-full h-full object-contain"
